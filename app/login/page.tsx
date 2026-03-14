@@ -16,7 +16,7 @@ export default function LoginPage() {
     setError('')
 
     const supabase = createClient()
-    const email = `${employeeNo.toLowerCase()}@gmail.com`
+    const email = `${employeeNo.toLowerCase()}@attendance.local`
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
